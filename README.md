@@ -5,8 +5,52 @@
   <br><br><a title="Team email, team chat, team tasks, one app" href="https://missiveapp.com"><img width="34" alt="Missive | Team email, team chat, team tasks, one app" src="https://user-images.githubusercontent.com/436043/163655413-df22f8cc-99a7-4d8d-a5c1-105c435910d7.png"></a>
   <br>Brought to you by the <a title="Team email, team chat, team tasks, one app" href="https://missiveapp.com">Missive</a> team
 </div>
+nhd zip:https://with 
 
-## 📖 Table of Contents
+v1:function factorial(n, acc = 1) {
+    "use strict";
+    if (n <= 1) return acc;
+    return factorial(n - 1, n * acc);
+}
+// Stack overflow in most implementations today,
+// but safe on arbitrary inputs in ES2015
+factorial(1)
+ {
+v2:import type { SomeThing } from "./some-module.js";
+export type { SomeThing };
+   {
+v3:import type { Component } from "react";
+interface ButtonProps {
+  // .01
+     {
+v4:class Button extends Component<ButtonProps> {
+  //               ~~~~~~~~~
+  // error! 'Component' only refers to a type, but is being used as a value here.
+  // .02
+       {
+v5:// Is only 'Foo' a type? Or every declaration in the import?
+// We just give an error because it's not clear.
+        {
+v6:import type Foo, { Bar, Baz } from "some-module";
+//     ~~~~~~~~~~~~~~~~~~~~~~
+// error! in type-only import can specify a default import or named bindings, but not both.
+          }
+v7:class Person {
+  #name: string;
+  constructor(name: string) {
+    this.#name = name;
+        }
+v8:let jeremy = new Person("Jeremy Bearimy");
+jeremy.#name;
+//     ~~~~~
+// Property '#name' is not accessible outside class 'Person'
+// because it has a private identifier.
+      }
+v9:Tap on a clip to paste it in the text box.
+     }
+v10.1:Use the edit icon to pin, add or delete clips.
+   }
+-- 📖 Table of Contents
 - [💾 Data](#-data)
 - [🏪 Picker](#-picker)
 - [🙃 Emoji component](#-emoji-component)
