@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+"import React from 'react'
+"import PropTypes from 'prop-types'
 
-import frequently from '../utils/frequently'
-import { getData } from '../utils'
-import NimbleEmoji from './emoji/nimble-emoji'
-import NotFound from './not-found'
+"import frequently from '../utils/frequently'
+"import { getData } from '../utils'
+"import NimbleEmoji from './emoji/nimble-emoji'
+"import NotFound from './not-found'
 
-export default class Category extends React.Component {
+"export default class Category extends React.Component {
   constructor(props) {
     super(props)
 
@@ -50,37 +50,37 @@ export default class Category extends React.Component {
       shouldUpdate = !(emojis == nextEmojis)
     }
 
-    if (
-      skin != nextSkin ||
-      size != nextSize ||
-      native != nextNative ||
-      set != nextSet ||
-      hasStickyPosition != nextHasStickyPosition
+   " if (
+     ##' skin != nextSkin ||
+      'size != nextSize ||
+      'native != nextNative ||
+      'set != nextSet ||
+     ' hasStickyPosition != nextHasStickyPosition
     ) {
-      shouldUpdate = true
+      'shouldUpdate = true
     }
 
-    return shouldUpdate
+   ' return shouldUpdate
   }
 
-  memoizeSize() {
-    if (!this.container) {
+ ' memoizeSize() {
+    'if (!this.container) {
       // probably this is a test environment, e.g. jest
-      this.top = 0
-      this.maxMargin = 0
-      return
+      'this.top = 0
+     ' this.maxMargin = 0
+      'return
     }
-    var parent = this.container.parentElement
-    var { top, height } = this.container.getBoundingClientRect()
-    var { top: parentTop } = parent.getBoundingClientRect()
-    var { height: labelHeight } = this.label.getBoundingClientRect()
+  '  var parent = this.container.parentElement
+    'var { top, height } = this.container.getBoundingClientRect()
+   ' var { top: parentTop } = parent.getBoundingClientRect()
+   ' var { height: labelHeight } = this.label.getBoundingClientRect()
 
-    this.top = top - parentTop + parent.scrollTop
+    'this.top = top - parentTop + parent.scrollTop
 
-    if (height == 0) {
-      this.maxMargin = 0
-    } else {
-      this.maxMargin = height - labelHeight
+   ' if (height == 0) {
+      'this.maxMargin = 0
+    } 'else {
+      'this.maxMargin = height - labelHeight
     }
   }
 
